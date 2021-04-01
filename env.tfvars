@@ -11,9 +11,9 @@ task_tag    = "assignment"
 # --------------------------------------------
 # Network values
 # --------------------------------------------
-vpc_cidr       = "172.17.0.0/16"
+vpc_cidr = "172.17.0.0/16"
 
 # --------------------------------------------
 # Cluster values
 # --------------------------------------------
-cluster_name                       = "Demo-X-ECS-Cluster"
+cluster_name = "Demo-X-ECS-Cluster"

@@ -54,7 +54,7 @@ variable "app_count" {
 
 variable "ecs_task_id" {
   description = "ecs task ids"
-  type = list(string)
+  type        = list(string)
 }
 
 variable "target_grp_id" {

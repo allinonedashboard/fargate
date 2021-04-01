@@ -20,6 +20,6 @@ output "ecs_role_arn" {
   value = module.iam.ecs_role_arn
 }
 
-output "ecs_tasks_ids"{
-  value =module.alb.ecs_tasks_id
+output "ecs_tasks_ids" {
+  value = module.alb.ecs_tasks_id
 }

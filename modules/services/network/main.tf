@@ -105,7 +105,7 @@ resource "aws_cloudwatch_log_stream" "myapp_log_stream" {
 
 # Network ACL to restrict traffic to private subnets
 resource "aws_network_acl" "private" {
-  vpc_id = aws_vpc.main.id
+  vpc_id     = aws_vpc.main.id
   subnet_ids = aws_subnet.private.*.id
 
   egress {
@@ -171,7 +171,7 @@ resource "aws_network_acl" "private" {
 
 # Network ACL to restrict traffic to public subnets
 resource "aws_network_acl" "public" {
-  vpc_id = aws_vpc.main.id
+  vpc_id     = aws_vpc.main.id
   subnet_ids = aws_subnet.public.*.id
 
   egress {

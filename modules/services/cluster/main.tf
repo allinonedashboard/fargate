@@ -10,18 +10,18 @@ resource "aws_ecs_task_definition" "app" {
   requires_compatibilities = ["FARGATE"]
   cpu                      = var.fargate_cpu
   memory                   = var.fargate_memory
-  container_definitions    = jsonencode([
+  container_definitions = jsonencode([
     {
-      name   = "nginx"
-      image  = var.app_image
-      cpu    = 256
-      memory = 512
+      name        = "nginx"
+      image       = var.app_image
+      cpu         = 256
+      memory      = 512
       networkmode = "awsvpc"
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          awslogs-group = "/ecs/myapp"
-          awslogs-region = var.region
+          awslogs-group         = "/ecs/myapp"
+          awslogs-region        = var.region
           awslogs-stream-prefix = "ecs"
         }
       }

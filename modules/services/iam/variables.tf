@@ -25,5 +25,5 @@ variable "task_tag" {
 
 variable "ecs_task_execution_role_name" {
   description = "ECS task execution role name"
-  default = "myEcsTaskExecutionRole"
+  default     = "myEcsTaskExecutionRole"
 }
