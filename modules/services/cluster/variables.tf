@@ -44,7 +44,7 @@ variable "fargate_memory" {
 
 variable "app_image" {
   description = "Docker image to run in the ECS cluster"
-  default     = "nginx:latest"
+  default     = "nginx:1.19.9-alpine"
 }
 
 variable "app_count" {

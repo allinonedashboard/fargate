@@ -91,7 +91,7 @@ resource "aws_route_table_association" "private" {
 
 # Create CloudWatch group and log stream and get logs for 30 days
 resource "aws_cloudwatch_log_group" "myapp_log_group" {
-  name              = "/ecs/myapp"
+  name              = "demo-x-logs"
   retention_in_days = 30
   tags = merge({
     Name = "demo_cloudwatch"
